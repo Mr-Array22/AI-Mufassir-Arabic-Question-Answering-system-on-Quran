@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from gradio_client import Client
 
 def get_answer(query):
-    client = Client("MrArray22/QuranQA", hf_token= "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")
+    client = Client("MrArray22/QuranQA", hf_token= "")
     result = client.predict(
         query,	# str  in 'query' Textbox component
         api_name="/predict"
